@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2348505289316A400FC7095 /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2348504289316A400FC7095 /* WinnersTableViewController.swift */; };
+		C234850828931C1500FC7095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C234850728931C1500FC7095 /* SceneDelegate.swift */; };
 		C293E9422892C9BF00816EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9412892C9BF00816EE8 /* AppDelegate.swift */; };
-		C293E9442892C9BF00816EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9432892C9BF00816EE8 /* SceneDelegate.swift */; };
-		C293E9462892C9BF00816EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9452892C9BF00816EE8 /* ViewController.swift */; };
 		C293E9492892C9BF00816EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293E9472892C9BF00816EE8 /* Main.storyboard */; };
 		C293E94B2892C9C700816EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C293E94A2892C9C700816EE8 /* Assets.xcassets */; };
 		C293E94E2892C9C700816EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293E94C2892C9C700816EE8 /* LaunchScreen.storyboard */; };
@@ -63,16 +63,15 @@
 		C293E9B72892CAE600816EE8 /* Brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = C293E9862892CAE600816EE8 /* Brasil.png */; };
 		C293E9B82892CAE600816EE8 /* Inglaterra.png in Resources */ = {isa = PBXBuildFile; fileRef = C293E9872892CAE600816EE8 /* Inglaterra.png */; };
 		C293E9BB2892CAF600816EE8 /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = C293E9BA2892CAF600816EE8 /* winners.json */; };
-		C293E9BF2892D40000816EE8 /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9BE2892D40000816EE8 /* WinnersTableViewController.swift */; };
 		C293E9C32892D4E400816EE8 /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9C22892D4E400816EE8 /* WorldCupViewController.swift */; };
 		C293E9C62892D58E00816EE8 /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9C52892D58E00816EE8 /* WorldCup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2348504289316A400FC7095 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
+		C234850728931C1500FC7095 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../SwiftQuiz/SwiftQuiz/SceneDelegate.swift; sourceTree = "<group>"; };
 		C293E93E2892C9BF00816EE8 /* CampeoesDaCopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampeoesDaCopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C293E9412892C9BF00816EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C293E9432892C9BF00816EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C293E9452892C9BF00816EE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C293E9482892C9BF00816EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C293E94A2892C9C700816EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C293E94D2892C9C700816EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +126,6 @@
 		C293E9862892CAE600816EE8 /* Brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Brasil.png; path = "../../../../../Desktop/Arquivos CampeoesDaCopa/Bandeiras/Brasil.png"; sourceTree = "<group>"; };
 		C293E9872892CAE600816EE8 /* Inglaterra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Inglaterra.png; path = "../../../../../Desktop/Arquivos CampeoesDaCopa/Bandeiras/Inglaterra.png"; sourceTree = "<group>"; };
 		C293E9BA2892CAF600816EE8 /* winners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = winners.json; path = "../../../../../Desktop/Arquivos CampeoesDaCopa/winners.json"; sourceTree = "<group>"; };
-		C293E9BE2892D40000816EE8 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
 		C293E9C22892D4E400816EE8 /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
 		C293E9C52892D58E00816EE8 /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,12 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				C293E9412892C9BF00816EE8 /* AppDelegate.swift */,
+				C234850728931C1500FC7095 /* SceneDelegate.swift */,
 				C293E9562892CABD00816EE8 /* Files */,
 				C293E9C82892D5B100816EE8 /* Models */,
 				C293E9BD2892D2A200816EE8 /* Views */,
 				C293E9C12892D43300816EE8 /* Controllers */,
-				C293E9432892C9BF00816EE8 /* SceneDelegate.swift */,
-				C293E9452892C9BF00816EE8 /* ViewController.swift */,
 				C293E94A2892C9C700816EE8 /* Assets.xcassets */,
 				C293E94F2892C9C700816EE8 /* Info.plist */,
 			);
@@ -244,8 +241,8 @@
 		C293E9C12892D43300816EE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C293E9BE2892D40000816EE8 /* WinnersTableViewController.swift */,
 				C293E9C22892D4E400816EE8 /* WorldCupViewController.swift */,
+				C2348504289316A400FC7095 /* WinnersTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -378,12 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C293E9BF2892D40000816EE8 /* WinnersTableViewController.swift in Sources */,
-				C293E9462892C9BF00816EE8 /* ViewController.swift in Sources */,
+				C234850828931C1500FC7095 /* SceneDelegate.swift in Sources */,
+				C2348505289316A400FC7095 /* WinnersTableViewController.swift in Sources */,
 				C293E9C62892D58E00816EE8 /* WorldCup.swift in Sources */,
 				C293E9422892C9BF00816EE8 /* AppDelegate.swift in Sources */,
 				C293E9C32892D4E400816EE8 /* WorldCupViewController.swift in Sources */,
-				C293E9442892C9BF00816EE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.CampeoesDaCopa.CampeoesDaCopa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -557,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.CampeoesDaCopa.CampeoesDaCopa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
