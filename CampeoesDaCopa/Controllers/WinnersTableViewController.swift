@@ -14,12 +14,20 @@ class WinnersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadWorldCups()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? WorldCupViewController,
+           let indexSelected = tableView.indexPathForSelectedRow?.row{
+            let worldCup = worldCups[indexSelected]
+            vc.worldCup = worldCup
+        }
     }
     
     func loadWorldCups() {
@@ -48,12 +56,10 @@ class WinnersTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupTableViewCell
 
         let worldCup = worldCups[indexPath.row]
-        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
-        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice))"
-        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
+        cell.prepare(with: worldCup)
         
         return cell
     }

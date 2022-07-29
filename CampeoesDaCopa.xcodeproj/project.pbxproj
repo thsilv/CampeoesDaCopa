@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C2348505289316A400FC7095 /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2348504289316A400FC7095 /* WinnersTableViewController.swift */; };
 		C234850828931C1500FC7095 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C234850728931C1500FC7095 /* SceneDelegate.swift */; };
+		C234850B28932DBF00FC7095 /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C234850A28932DBF00FC7095 /* WorldCupTableViewCell.swift */; };
+		C293C82E28946E3000E6F651 /* GamesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293C82D28946E3000E6F651 /* GamesTableViewCell.swift */; };
 		C293E9422892C9BF00816EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C293E9412892C9BF00816EE8 /* AppDelegate.swift */; };
 		C293E9492892C9BF00816EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C293E9472892C9BF00816EE8 /* Main.storyboard */; };
 		C293E94B2892C9C700816EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C293E94A2892C9C700816EE8 /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 /* Begin PBXFileReference section */
 		C2348504289316A400FC7095 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
 		C234850728931C1500FC7095 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../../SwiftQuiz/SwiftQuiz/SceneDelegate.swift; sourceTree = "<group>"; };
+		C234850A28932DBF00FC7095 /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupTableViewCell.swift; sourceTree = "<group>"; };
+		C293C82D28946E3000E6F651 /* GamesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewCell.swift; sourceTree = "<group>"; };
 		C293E93E2892C9BF00816EE8 /* CampeoesDaCopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampeoesDaCopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C293E9412892C9BF00816EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C293E9482892C9BF00816EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 			children = (
 				C293E9C22892D4E400816EE8 /* WorldCupViewController.swift */,
 				C2348504289316A400FC7095 /* WinnersTableViewController.swift */,
+				C234850A28932DBF00FC7095 /* WorldCupTableViewCell.swift */,
+				C293C82D28946E3000E6F651 /* GamesTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,7 +296,7 @@
 				};
 			};
 			buildConfigurationList = C293E9392892C9BF00816EE8 /* Build configuration list for PBXProject "CampeoesDaCopa" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -378,6 +384,8 @@
 				C234850828931C1500FC7095 /* SceneDelegate.swift in Sources */,
 				C2348505289316A400FC7095 /* WinnersTableViewController.swift in Sources */,
 				C293E9C62892D58E00816EE8 /* WorldCup.swift in Sources */,
+				C293C82E28946E3000E6F651 /* GamesTableViewCell.swift in Sources */,
+				C234850B28932DBF00FC7095 /* WorldCupTableViewCell.swift in Sources */,
 				C293E9422892C9BF00816EE8 /* AppDelegate.swift in Sources */,
 				C293E9C32892D4E400816EE8 /* WorldCupViewController.swift in Sources */,
 			);
