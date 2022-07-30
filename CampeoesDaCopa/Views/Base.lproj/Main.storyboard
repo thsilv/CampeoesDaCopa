@@ -228,12 +228,12 @@
                                     <constraint firstAttribute="height" constant="1" id="e7o-FE-qX0"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucu-sY-2Ar">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ucu-sY-2Ar">
                                 <rect key="frame" x="0.0" y="333" width="414" height="563"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trajectoryCell" rowHeight="60" id="G6v-yI-Xmo">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trajectoryCell" rowHeight="60" id="G6v-yI-Xmo" customClass="GamesTableViewCell" customModule="CampeoesDaCopa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G6v-yI-Xmo" id="IMB-do-WRg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -246,7 +246,7 @@
                                                         <constraint firstAttribute="height" constant="32" id="XL2-5Y-6jH"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-UV-oiw">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-UV-oiw">
                                                     <rect key="frame" x="75" y="20.5" width="102" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -259,7 +259,7 @@
                                                         <constraint firstAttribute="width" constant="45" id="bVF-4o-8gk"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-99-bV4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-99-bV4">
                                                     <rect key="frame" x="237" y="20.5" width="102" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -272,6 +272,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="tjC-99-bV4" firstAttribute="centerY" secondItem="IMB-do-WRg" secondAttribute="centerY" id="2fi-LA-PqN"/>
                                                 <constraint firstItem="rHd-UV-oiw" firstAttribute="leading" secondItem="wuI-xQ-3G4" secondAttribute="trailing" constant="10" id="5p4-rS-vJ7"/>
@@ -289,6 +290,14 @@
                                                 <constraint firstItem="4mN-Py-htE" firstAttribute="trailing" secondItem="IMB-do-WRg" secondAttribute="trailingMargin" id="p5r-GG-n7c"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="ivAway" destination="4mN-Py-htE" id="aJb-nP-e2l"/>
+                                            <outlet property="ivHome" destination="wuI-xQ-3G4" id="QNP-0e-Vsk"/>
+                                            <outlet property="lbAway" destination="tjC-99-bV4" id="EGL-qY-qzx"/>
+                                            <outlet property="lbHome" destination="rHd-UV-oiw" id="CTZ-fW-eNw"/>
+                                            <outlet property="lbScore" destination="w7g-hb-Boa" id="2Ev-xi-ENo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
